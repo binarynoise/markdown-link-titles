@@ -1,10 +1,12 @@
 import org.jsoup.Jsoup
 import java.io.File
 import java.net.MalformedURLException
+import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
         println("Usage: java -jar markdown-link-titles-shadow.jar file [createCopy]")
+        exitProcess(1)
     }
     val fileName = args[0]
     val file = File(fileName)
