@@ -1,0 +1,3 @@
+[submodule "krakdown"]
+	path = krakdown
+	url = https://github.com/nickhristov/krakdown.git
